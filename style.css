@@ -21,12 +21,11 @@ body {
     transition: 0.1s all ease;
 }
 
-.column{
-    display: flex;
-    justify-content: right;
-    
-    
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
 }
+
 #input{
     display: flex;
     padding: 10px;

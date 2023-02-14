@@ -1,8 +1,4 @@
-/**
- * NOTE: SELECTION SORT SOLUTION IS GIVEN AS A REFERECE TO COMPLETE THE OTHER SORTING ALGORITHMS
- */
-
- async function selection(){
+async function selection(){
     console.log('In selection()');
     const ele = document.querySelectorAll(".bar");
     for(let i = 0; i < ele.length; i++){
@@ -39,12 +35,12 @@
 }
 
 const selectionSortbtn = document.querySelector(".selectionSort");
-selectionSortbtn.addEventListener('click', async function(){
+selectionSortbtn.addEventListener('click',async function(){
     disableSortingBtn();
     disableSizeSlider();
     disableNewArrayBtn();
     await selection();
-    enableSortingBtn()
+    enableSortingBtn();
     enableSizeSlider();
     enableNewArrayBtn();
 });
